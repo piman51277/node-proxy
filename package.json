@@ -10,7 +10,7 @@
       "unblocker": "*"
     },
     "engines": {
-      "node": "0.12.x"
+      "node": "12.18.x"
     },
     "scripts": {
       "start": "node app.js"
