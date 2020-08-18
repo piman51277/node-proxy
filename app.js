@@ -8,7 +8,7 @@ const Transform = require('stream').Transform;
 const app = express();
 
 var unblockerConfig = {
-    prefix: '/proxytest/'
+    prefix: '/proxy/'
 };
 
 app.use(unblocker(unblockerConfig));
