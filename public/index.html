@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <form id="query">
+        <input type="text" id = "data">
+        <input type="submit" value="Submit">
+    </form>
+    <script>
+        let element = (id) => {
+            return document.getElementById(id);
+        }
+        element('query').onsubmit = function () {
+            var url = element('data').value;
+            if (url.substr(0, 4) != "http") url = "http://" + url;
+            window.location.pathname = 'proxy/' + url;
+            return false;
+        };
+        window.onload = function() { 
+			element('data').focus();
+		}
+    </script>
+</body>
+
+</html>

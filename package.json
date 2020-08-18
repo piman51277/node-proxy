@@ -1,0 +1,19 @@
+{
+    "name": "node-proxy",
+    "description": "A bare-bones implementation of nodeunblocker.com",
+    "author": "piman",
+    "version": "1.0.0",
+    "private": true,
+    "homepage": "",
+    "dependencies": {
+      "express": "^4.17.1",
+      "unblocker": "*"
+    },
+    "engines": {
+      "node": "0.12.x"
+    },
+    "scripts": {
+      "start": "node app.js"
+    },
+    "license": ""
+  }
